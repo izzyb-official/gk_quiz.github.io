@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient( to bottom, #a2d6fd, #daa2fa);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*
+margin - outer spacing
+padding - inner spacing
+*/
+
+.header{
+    text-align: center;
+    color: rgb(156, 247, 247);
+    background-color: plum;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    animation: SlideAndFadeIn 2s ease-in-out forwards;
+}
+
+@keyframes SlideAndFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.quiz-container{
+    max-width: 600px;
+    background-color:azure;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.progress-bar-container{
+    height: 15px;
+    background-color: darkmagenta;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.progress-bar{
+    height: 15px;
+    background-color: rgb(252, 167, 252);
+    width: 50%;
+    border-radius: 10px;
+}
+.timer{
+    background-color: paleturquoise;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 80px 60px;
+    border-radius: 60%;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: #daa2fa;
+    border: none;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+.option-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.options-container{
+    margin: 20px;
+    height: fit-content;
+}
